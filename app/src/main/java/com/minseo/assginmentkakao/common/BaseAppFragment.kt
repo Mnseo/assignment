@@ -37,11 +37,4 @@ abstract class BaseAppFragment<B: ViewDataBinding> : Fragment() {
         super.onDestroyView()
     }
 
-    fun setStatusBarColor() {
-        try {
-            this.requireActivity().window?.statusBarColor = WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        } catch (e: Exception) {
-            Timber.e(e)
-        }
-    }
 }

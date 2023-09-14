@@ -2,10 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_navigation"
-    app:startDestination="@layout/activity_main">
+    app:startDestination="@id/fragment_home">
 
     <fragment
-        android:id="@+id/fragment_home">
+        android:id="@+id/fragment_home"
+        android:name="com.minseo.assginmentkakao.HomeFragment">
 
     </fragment>
 

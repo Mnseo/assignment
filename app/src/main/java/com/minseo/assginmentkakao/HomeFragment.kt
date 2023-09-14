@@ -7,22 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import com.minseo.assginmentkakao.common.BaseAppFragment
 import com.minseo.assginmentkakao.databinding.FragmentHomeBinding
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
 class HomeFragment : BaseAppFragment<FragmentHomeBinding>() {
-
     override fun getFragmentBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentHomeBinding {
-        return FragmentHomeBinding.inflate(inflater, container)
-    }
-
+    ): FragmentHomeBinding = FragmentHomeBinding.inflate(inflater)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setStatusBarColor()
+
     }
 
 }
