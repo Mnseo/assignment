@@ -109,7 +109,7 @@ kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit"
 junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-constraintlayout = {group = "androidx.constraintlayout", name = "constraintlyaout", version.ref = "constraintLayout"}
+constraintlayout = {group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintLayout"}
 
 [bundles]
 retrofit = [

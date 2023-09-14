@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -7,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.minseo.assginmentkakao'
-    compileSdk 33
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.minseo.assginmentkakao"
-        minSdk 24
-        targetSdk 33
+        minSdkVersion 24
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -35,6 +36,10 @@ android {
     buildFeatures {
         dataBinding true
         viewBinding true
+    }
+
+    hilt {
+        enableAggregatingTask = true
     }
 
 }

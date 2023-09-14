@@ -14,8 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AssginmentKakao"
 include ':app'
-include ':data'
-include ':domain'
-include ':model'
-include ':ui'
-include ':sharedPreference'
