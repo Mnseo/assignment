@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/ic_search_icon"
-        android:title="Search"
-        app:showAsAction="ifRoom"/>
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <item
-        android:id="@+id/save"
-        android:icon="@drawable/ic_save_icon"
-        android:title="Search"
-        app:showAsAction="ifRoom"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragment_search"
+            android:icon="@drawable/ic_search_icon"
+            android:title="Search"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/fragment_storage"
+            android:icon="@drawable/ic_save_icon"
+            android:title="Storage"
+            app:showAsAction="ifRoom"/>
+    </group>
 </menu>
