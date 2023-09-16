@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.activity.viewModels
 import androidx.appcompat.widget.Toolbar
+import androidx.navigation.findNavController
 import com.minseo.assginmentkakao.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

@@ -6,8 +6,40 @@
 
     <fragment
         android:id="@+id/fragment_home"
+        android:label="HomeFragment"
         android:name="com.minseo.assginmentkakao.HomeFragment">
 
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_search"
+            app:popUpToInclusive="false"
+            app:popUpTo="@id/fragment_search"
+            app:destination="@id/fragment_search" />
+
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_storage"
+            app:popUpToInclusive="false"
+            app:popUpTo="@id/fragment_storage"
+            app:destination="@id/fragment_storage" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:label="SearchFragment"
+        android:name="com.minseo.assginmentkakao.SearchFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_storage"
+        android:label="StorageFragment"
+        android:name="com.minseo.assginmentkakao.StroageFragment">
+
+        <action
+            app:popUpToInclusive="false"
+            android:id="@+id/action_fragment_storage_to_fragment_home"
+            app:popUpTo="@id/fragment_home"
+            app:destination="@id/fragment_home" />
     </fragment>
 
 </navigation>
