@@ -1,4 +1,4 @@
-package com.minseo.assginmentkakao.common
+package com.minseo.assginmentkakao.navigation
 
 import androidx.navigation.fragment.NavHostFragment
 
