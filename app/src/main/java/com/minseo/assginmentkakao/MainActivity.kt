@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        Log.d("click item", item.toString())
         return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
     }
 
